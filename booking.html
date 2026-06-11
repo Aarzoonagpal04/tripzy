@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tripzy - Booking</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8f5ff;
+padding:40px;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.radio-option{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    cursor:pointer;
+}
+
+.radio-option input{
+    width:auto;
+    margin:0;
+}
+
+h1{
+color:#7c3aed;
+margin-bottom:20px;
+text-align:center;
+}
+
+.summary{
+background:#f3ecff;
+padding:20px;
+border-radius:15px;
+margin-bottom:25px;
+}
+
+.summary p{
+margin:8px 0;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.payment{
+margin:20px 0;
+}
+
+.payment label{
+display:block;
+margin:10px 0;
+}
+
+.total{
+font-size:22px;
+font-weight:bold;
+color:#7c3aed;
+margin:20px 0;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+background:linear-gradient(to right,#7c3aed,#ec4899);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Complete Your Booking</h1>
+
+<div class="summary">
+<p><b>Destination:</b> Goa, India</p>
+<p><b>Duration:</b> 4 Days / 3 Nights</p>
+<p><b>Travelers:</b> 2</p>
+</div>
+
+<form action="confirm.html">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required
+maxlength="10"
+oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+<div class="payment">
+
+<h3>Select Payment Method</h3>
+
+<label class="radio-option">
+<input type="radio" name="pay" required>
+Credit Card
+</label>
+
+<label class="radio-option">
+<input type="radio" name="pay">
+Debit Card
+</label>
+
+<label class="radio-option">
+<input type="radio" name="pay">
+UPI
+</label>
+
+<label class="radio-option">
+<input type="radio" name="pay">
+Net Banking
+</label>
+
+</div>
+
+<button type="submit">
+Confirm Booking
+</button>
+
+</form>
+</a>
+
+</div>
+
+</body>
+</html>

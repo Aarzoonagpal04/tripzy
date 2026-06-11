@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripzy Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f7ff;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+width:1400px;
+height:800px;
+background:white;
+border-radius:35px;
+overflow:hidden;
+display:flex;
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+/* LEFT SIDE */
+
+.left{
+flex:1;
+position:relative;
+padding:60px;
+color:white;
+
+background:
+linear-gradient(
+rgba(108,77,255,.45),
+rgba(255,77,184,.25)
+),
+url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80");
+
+background-size:cover;
+background-position:center;
+}
+
+.logo{
+font-size:42px;
+font-weight:700;
+margin-bottom:80px;
+}
+
+.hero h1{
+font-size:78px;
+line-height:1.05;
+font-weight:700;
+}
+
+.hero p{
+margin-top:20px;
+font-size:24px;
+max-width:350px;
+}
+
+.dot{
+display:inline-block;
+width:12px;
+height:12px;
+border-radius:50%;
+margin-left:8px;
+}
+
+.pink{
+background:#ff4db8;
+}
+
+.purple{
+background:#8b5cf6;
+}
+
+.blue{
+background:#60a5fa;
+}
+
+.community{
+position:absolute;
+bottom:40px;
+left:40px;
+
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+
+padding:20px;
+border-radius:20px;
+width:380px;
+font-size:15px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+background:white;
+}
+
+.login-box{
+width:75%;
+}
+
+.login-box h2{
+font-size:56px;
+color:#111827;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:22px;
+color:#777;
+margin-bottom:40px;
+}
+
+.input-box{
+margin-bottom:20px;
+}
+
+.input-box input{
+width:100%;
+padding:22px;
+border:1px solid #e5e7eb;
+border-radius:18px;
+font-size:18px;
+outline:none;
+}
+
+.options{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.options a{
+text-decoration:none;
+color:#7c3aed;
+font-weight:500;
+}
+
+.login-btn{
+width:100%;
+padding:22px;
+border:none;
+border-radius:18px;
+font-size:22px;
+font-weight:600;
+color:white;
+cursor:pointer;
+
+background:linear-gradient(
+90deg,
+#6c4dff,
+#a855f7,
+#ff4db8
+);
+}
+
+.login-btn:hover{
+opacity:.95;
+}
+
+.divider{
+text-align:center;
+margin:30px 0;
+color:#888;
+position:relative;
+}
+
+.divider::before,
+.divider::after{
+content:"";
+position:absolute;
+top:50%;
+width:35%;
+height:1px;
+background:#ddd;
+}
+
+.divider::before{
+left:0;
+}
+
+.divider::after{
+right:0;
+}
+
+.social{
+display:flex;
+gap:20px;
+}
+
+.social button{
+flex:1;
+padding:18px;
+background:white;
+border:1px solid #ddd;
+border-radius:16px;
+cursor:pointer;
+font-size:17px;
+}
+
+.signup{
+margin-top:30px;
+text-align:center;
+font-size:18px;
+}
+
+.signup a{
+color:#7c3aed;
+text-decoration:none;
+font-weight:600;
+}
+
+.secure{
+margin-top:35px;
+text-align:center;
+font-size:14px;
+color:#999;
+}
+
+</style>
+</head>
+
+<body>
+<a href ="home.html">Login </a>
+<div class="container">
+
+<div class="left">
+
+<div class="logo">
+✈ Tripzy
+</div>
+
+<div class="hero">
+
+<h1>
+Explore<span class="dot pink"></span><br>
+Dream<span class="dot purple"></span><br>
+Discover<span class="dot blue"></span>
+</h1>
+
+<p>
+Your next adventure starts here.
+</p>
+
+</div>
+
+<div class="community">
+Join thousands of explorers and start your journey today!
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="login-box">
+
+<h2>Welcome Back!</h2>
+
+<p class="subtitle">
+Login to continue your adventure
+</p>
+
+<form action="home.html">
+
+<div class="input-box">
+<input type="email"
+placeholder="Email Address"
+required>
+</div>
+
+<div class="input-box">
+<input type="password"
+placeholder="Password"
+required
+minlength="6">
+</div>
+
+<div class="options">
+<label>
+<input type="checkbox">
+Remember me
+</label>
+
+<a href="#">Forgot Password?</a>
+</div>
+
+<button class="login-btn" type="submit">
+Login
+</button>
+
+</form>
+
+<div class="divider">
+or continue with
+</div>
+
+<div class="social">
+<button>Google</button>
+<button>Facebook</button>
+</div>
+
+<div class="signup">
+Don't have an account?
+<a href="#">Sign Up</a>
+</div>
+
+<div class="secure">
+🔒 Your data is safe and secure with us
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

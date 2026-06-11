@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripzy - My Trip</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f5ff;
+    padding:30px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.back{
+    text-decoration:none;
+    color:#7c3aed;
+    font-weight:bold;
+}
+
+.trip-card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    margin:20px 0;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.trip-card img{
+    width:250px;
+    border-radius:15px;
+}
+
+.trip-info h1{
+    color:#7c3aed;
+    margin-bottom:10px;
+}
+
+.badge{
+    display:inline-block;
+    background:#efe7ff;
+    color:#7c3aed;
+    padding:8px 15px;
+    border-radius:20px;
+    margin-top:10px;
+}
+
+.content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+}
+
+.day-card,
+.side-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.day-card h3{
+    color:#7c3aed;
+    margin-bottom:10px;
+}
+
+.day-card ul{
+    padding-left:20px;
+}
+
+.day-card li{
+    margin:8px 0;
+}
+
+.side-card h3{
+    margin-bottom:15px;
+}
+
+.action-btn{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    background:#7c3aed;
+    color:white;
+    cursor:pointer;
+}
+
+.book{
+    background:linear-gradient(90deg,#7c3aed,#ec4899);
+}
+
+@media(max-width:900px){
+
+.content{
+    grid-template-columns:1fr;
+}
+
+.trip-card{
+    flex-direction:column;
+}
+
+.trip-card img{
+    width:100%;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="#" class="back">← Back to Recommendations</a>
+
+<div class="trip-card">
+<img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600" alt="Goa">
+
+<div class="trip-info">
+<h1>Goa, India</h1>
+<p>4 Days / 3 Nights • Couple Trip</p>
+
+<div class="badge">⭐ 95% Match</div>
+<div class="badge">₹22,500 Budget</div>
+</div>
+</div>
+
+<div class="content">
+
+<div>
+
+<div class="day-card">
+<h3>Day 1 - Arrival & Relax</h3>
+<ul>
+<li>Hotel Check-in</li>
+<li>Relax at Baga Beach</li>
+<li>Sunset at Anjuna Beach</li>
+<li>Dinner at Beach Shack</li>
+</ul>
+</div>
+
+<div class="day-card">
+<h3>Day 2 - Adventure</h3>
+<ul>
+<li>Water Sports</li>
+<li>Aguada Fort</li>
+<li>Shopping Market</li>
+<li>Sunset Cruise</li>
+</ul>
+</div>
+
+<div class="day-card">
+<h3>Day 3 - Explore</h3>
+<ul>
+<li>Dudhsagar Falls</li>
+<li>Old Goa Churches</li>
+<li>Cafe Hopping</li>
+<li>Dinner</li>
+</ul>
+</div>
+
+<div class="day-card">
+<h3>Day 4 - Departure</h3>
+<ul>
+<li>Breakfast</li>
+<li>Last Minute Shopping</li>
+<li>Check-out</li>
+<li>Return Journey</li>
+</ul>
+</div>
+
+</div>
+
+<div>
+
+<div class="side-card">
+<h3>Budget Overview</h3>
+<p>✈ Flights: ₹7,000</p>
+<p>🏨 Hotel: ₹8,500</p>
+<p>🍔 Food: ₹3,000</p>
+<p>🎯 Activities: ₹4,000</p>
+</div>
+
+<div class="side-card">
+<h3>Actions</h3>
+<button class="action-btn">Save Trip</button>
+<button class="action-btn">Add to Wishlist</button>
+<button class="action-btn">Download PDF</button>
+</div>
+
+<div class="side-card">
+<h3>Ready to Travel?</h3>
+<p>Book your trip now and enjoy exciting offers.</p>
+<a href="booking.html">
+<button class="action-btn book">Book Now</button>
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

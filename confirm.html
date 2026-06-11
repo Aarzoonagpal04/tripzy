@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripzy - Booking Confirmed</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f5ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:500px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.icon{
+    font-size:80px;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#7c3aed;
+    margin-bottom:10px;
+}
+
+p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.booking-id{
+    background:#f3ecff;
+    color:#7c3aed;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.details{
+    text-align:left;
+    margin-top:20px;
+}
+
+.details p{
+    margin:10px 0;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(to right,#7c3aed,#ec4899);
+    color:white;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="icon">✅</div>
+
+    <h1>Booking Confirmed!</h1>
+
+    <p>Your trip has been successfully booked.</p>
+
+    <div class="booking-id">
+        Booking ID: TPZ2026A123
+    </div>
+
+    <div class="details">
+        <p><strong>Destination:</strong> Goa, India</p>
+        <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+        <p><strong>Travelers:</strong> 2</p>
+        <p><strong>Total Paid:</strong> ₹22,500</p>
+    </div>
+
+    <button onclick="location.href='home.html'">
+        Back to Home
+    </button>
+
+</div>
+
+</body>
+</html>
